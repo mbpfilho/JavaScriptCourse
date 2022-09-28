@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dancer 1</title>
+    <style>
+        div {
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 5px solid rgba(0,1,300,0.8);
+        background: rgba(0,1,300,0.5);
+        color: whitesmoke;
+        box-shadow: 2px 2px 3px rgba(0,0,300,0.5);
+        border-radius: 12px;
+        padding: 4px 12px;
+        display: inline-block;
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>Dancer 01: Theodor</div>
+
+    <script>
+        const para = document.querySelector('div');
+        para.addEventListener('click', updateName);
+        function updateName() {
+        let name = prompt('Enter a new name');
+        para.textContent = 'Dancer 1: ' + name;
+        }
+    </script>
+</body>
+</html>
